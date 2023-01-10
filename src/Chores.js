@@ -7,8 +7,6 @@ export class Chores extends Component {
         errandsList: []
     }
 
-    // прописываем функциb
-
 onChangeEvent(e) {
     this.setState ({userInput: e})
     }
@@ -38,12 +36,10 @@ deleteIssue() {
     this.setState ({errandsList: listArray})
 }
 
-// оборачиваем в форму, e.preventDefault - чтобы страница не обновлялась при нажатии на Enter
 onFormSubmit(e) {
     e.preventDefault ();
 }
 
-// основная часть
 render() {
     return (
     <div>
